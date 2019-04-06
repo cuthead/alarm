@@ -22,7 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".RefreshBroadcastReceiver">
+        <receiver android:name=".RefreshBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.example.alarm.REFRESH" />
+            </intent-filter>
         </receiver>
     </application>
 
